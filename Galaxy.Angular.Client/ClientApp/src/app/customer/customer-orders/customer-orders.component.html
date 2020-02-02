@@ -1,0 +1,73 @@
+<div>
+  <div *ngFor="let order of customer.Orders" class="card" fxLayout="row wrap">
+    <mat-card fxFlex>
+      <mat-card-header>
+        <a class="card-name">
+          Orden #{{order.OrderId}}
+        </a>
+      </mat-card-header>
+      <mat-card-content>
+        <div fxLayout="row">
+          <div fxFlex="100">
+
+            <div class="container-table mat-elevation-z8">
+              <!--<table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Product Name</th>
+                  <th>Item Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of order.Items">
+                  <td>{{ item.ProductName | capitalize }}</td>
+                  <td>{{ item.ItemCost| currency:'USD':'symbol' }}</td>
+                </tr>
+                <tr *ngIf="!order.Items.length">
+                  <td colspan="2">No Records Found</td>
+                </tr>
+              </tbody>
+            </table>-->
+
+              <table mat-table [dataSource]="loadData(order.Items)" matSort *ngIf="loadData(order.Items).data.length > 0">
+
+                <!--Product Name Column-->
+                <ng-container matColumnDef="ProductName">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Product Name </th>
+                  <td mat-cell *matCellDef="let item">{{item.ProductName}}</td>
+                  <td mat-footer-cell *matFooterCellDef> Total </td>
+                </ng-container>
+
+                <!--Item Cost Column-->
+                <ng-container matColumnDef="ItemCost">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Item Cost </th>
+                  <td mat-cell *matCellDef="let item">{{item.ItemCost | currency:'USD':'symbol'}}</td>
+                  <td mat-footer-cell *matFooterCellDef> {{order.OrderTotal | currency:'USD':'symbol'}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                <tr mat-footer-row *matFooterRowDef="displayedColumns" class="example-first-footer-row"></tr>
+              </table>
+
+              <table mat-table [dataSource]="loadData(order.Items)" matSort *ngIf="loadData(order.Items).data.length == 0">
+                <ng-container matColumnDef="noRecord">
+                  <td mat-footer-cell *matFooterCellDef>No records found.</td>
+                </ng-container>
+
+                <ng-template [ngIf]="dataSource.data.length === 0">
+                  <tr mat-footer-row *matFooterRowDef="['noRecord']"></tr>
+                </ng-template>
+              </table>
+
+                <!--<mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>-->
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,10 @@
+C:\Users\Alumno\Desktop\Angular8Net-master\Angular8Net-master\06 - Angular\Galaxy.Angular\Galaxy.Angular.DB\bin\Debug\Galaxy.Angular.DB.dacpac
+C:\Users\Alumno\Desktop\Angular8Net-master\Angular8Net-master\06 - Angular\Galaxy.Angular\Galaxy.Angular.DB\bin\Debug\Galaxy.Angular.DB.dll
+C:\Users\Alumno\Desktop\Angular8Net-master\Angular8Net-master\06 - Angular\Galaxy.Angular\Galaxy.Angular.DB\bin\Debug\Galaxy.Angular.DB.pdb
+C:\Users\Alumno\Desktop\Angular8Net-master\Angular8Net-master\06 - Angular\Galaxy.Angular\Galaxy.Angular.DB\obj\Debug\Galaxy.Angular.DB.sqlprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\Angular8Net-master\Angular8Net-master\06 - Angular\Galaxy.Angular\Galaxy.Angular.DB\obj\Debug\Model.xml
+C:\Users\Alumno\Desktop\Angular8Net-master\Angular8Net-master\06 - Angular\Galaxy.Angular\Galaxy.Angular.DB\obj\Debug\refactor.xml
+C:\Users\Alumno\Desktop\Angular8Net-master\Angular8Net-master\06 - Angular\Galaxy.Angular\Galaxy.Angular.DB\obj\Debug\postdeploy.sql
+C:\Users\Alumno\Desktop\Angular8Net-master\Angular8Net-master\06 - Angular\Galaxy.Angular\Galaxy.Angular.DB\obj\Debug\predeploy.sql
+C:\Users\Alumno\Desktop\Angular8Net-master\Angular8Net-master\06 - Angular\Galaxy.Angular\Galaxy.Angular.DB\obj\Debug\Galaxy.Angular.DB.dll
+C:\Users\Alumno\Desktop\Angular8Net-master\Angular8Net-master\06 - Angular\Galaxy.Angular\Galaxy.Angular.DB\obj\Debug\Galaxy.Angular.DB.pdb
